@@ -6,9 +6,11 @@ Beispiel einer SPARQL-Endpoint implementation (umgesetzt mit [Apache Jena](https
 ## Query RDFa data
 Folgende Beispiel Eingabe gibt die namen aller Techarticles in rdfa.html zurück
 
+```
 PREFIX foo: <http://schema.org/>
 SELECT ?name
 WHERE {
   SERVICE <https://patternpedia.github.io/rdf-playground/rdfa.html> {
     ?TechArticles foo:name ?name  }
 }
+```
