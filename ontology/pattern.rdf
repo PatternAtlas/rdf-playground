@@ -1,0 +1,37 @@
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+	xmlns:owl="http://www.w3.org/2002/07/owl#"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:pattern="https://patternpedia.github.io/rdf-playground/ontology/pattern#"> 
+
+	<!-- OWL Header Example -->
+	<owl:Ontology rdf:about="https://patternpedia.github.io/rdf-playground/ontology/pattern">
+		<dc:title>The PatternPedia Pattern Ontology</dc:title>
+		<dc:description>An example ontology for a pattern</dc:description>
+	</owl:Ontology>
+
+    
+    <!-- OWL Class Definition pattern -->
+	<owl:Class rdf:about="https://patternpedia.github.io/rdf-playground/ontology/pattern#patterntype">
+		<rdfs:label>The pattern type</rdfs:label>
+		<rdfs:comment>The class of patterntype</rdfs:comment>
+	</owl:Class>
+
+    <!-- OWL Subclass Definition - CloudComputingPattern -->
+	<owl:Class rdf:about="https://patternpedia.github.io/rdf-playground/ontology/pattern#ccpattern">
+		<rdfs:subClassOf rdf:resource="https://patternpedia.github.io/rdf-playground/ontology/pattern#patterntype"/>
+        <rdfs:label>Cloud Computing Pattern</rdfs:label>
+		<rdfs:comment>The class for CloudComputingPattern.</rdfs:comment>
+    </owl:Class>
+
+    <!-- Datatype Properties relates OWL instance to a literal -->
+	<owl:DatatypeProperty rdf:about="https://patternpedia.github.io/rdf-playground/ontology/pattern#patternFamily"/>
+
+    <!-- Datatype Properties relates OWL instance to a literal -->
+	<owl:DatatypeProperty rdf:about="https://patternpedia.github.io/rdf-playground/ontology/pattern#name"/>
+	
+    <!--Object Properties relates two OWL insances -->
+	<owl:ObjectProperty rdf:about="https://patternpedia.github.io/rdf-playground/ontology/pattern#relatedTo"/>
+
+</rdf:RDF>

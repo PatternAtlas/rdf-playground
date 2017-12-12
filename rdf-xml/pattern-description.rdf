@@ -1,0 +1,21 @@
+<rdf:RDF
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+    xmlns:pattern="https://patternpedia.github.io/rdf-playground/ontology/pattern#"> 
+
+    <!-- Define the Elastic Infrastructure class instance -->
+	<rdf:Description rdf:about="https://patternpedia.github.io/rdf-playground/ontology/pattern#elasticinfrastructure">
+		<rdf:type rdf:resource="https://patternpedia.github.io/rdf-playground/ontology/pattern#ccpattern"/>
+        <pattern:name>Elastic Infrastructure</pattern:name>
+		<pattern:patternFamily>CloudOfferings</pattern:patternFamily>
+		<pattern:relatedTo rdf:resource="https://patternpedia.github.io/rdf-playground/ontology/pattern#hypervisor"/>
+    </rdf:Description>
+
+     <!-- Define the Hypervisor class instance -->
+	<rdf:Description rdf:about="https://patternpedia.github.io/rdf-playground/ontology/pattern#hypervisor">
+		<rdf:type rdf:resource="https://patternpedia.github.io/rdf-playground/ontology/pattern#ccpattern"/>
+        <pattern:name>Hypervisor</pattern:name>
+		<pattern:patternFamily>CloudOfferings</pattern:patternFamily>
+		<pattern:relatedTo rdf:resource="https://patternpedia.github.io/rdf-playground/ontology/pattern#elasticinfrastructure"/>
+    </rdf:Description>
+
+</rdf:RDF>
