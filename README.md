@@ -14,17 +14,15 @@ WHERE {
     ?TechArticles foo:name ?name  }
 }
 ```
-## An 2 files
+## Query über zwei files
 ```
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
-PREFIX foo: <http://schema.org/>
-SELECT *
+SELECT ?nameOfFriend
 WHERE {
   SERVICE <https://patternpedia.github.io/rdf-playground/foaf-manu.html> {
     ?S foaf:knows ?knowsUri   }
   SERVICE ?knowsUri {
-  ?Su ?p ?o
+    ?Friend foaf:name ?nameOfFriend
   }
-
 }
 ```
