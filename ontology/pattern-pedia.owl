@@ -1,0 +1,138 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/christoph/ontologies/2017/11/pattern-pedia#"
+     xml:base="http://www.semanticweb.org/christoph/ontologies/2017/11/pattern-pedia"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/christoph/ontologies/2017/11/pattern-pedia"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/christoph/ontologies/2017/11/pattern-pedia#isRelatedTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/christoph/ontologies/2017/11/pattern-pedia#isRelatedTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christoph/ontologies/2017/11/pattern-pedia#Pattern"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/christoph/ontologies/2017/11/pattern-pedia#Pattern"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christoph/ontologies/2017/11/pattern-pedia#isSolutionImplementationTo -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/christoph/ontologies/2017/11/pattern-pedia#isSolutionImplementationTo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christoph/ontologies/2017/11/pattern-pedia#SolutionImplementation"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/christoph/ontologies/2017/11/pattern-pedia#Pattern"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/christoph/ontologies/2017/11/pattern-pedia#context -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/christoph/ontologies/2017/11/pattern-pedia#context">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christoph/ontologies/2017/11/pattern-pedia#Pattern"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christoph/ontologies/2017/11/pattern-pedia#name -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/christoph/ontologies/2017/11/pattern-pedia#name">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christoph/ontologies/2017/11/pattern-pedia#Pattern"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christoph/ontologies/2017/11/pattern-pedia#problem -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/christoph/ontologies/2017/11/pattern-pedia#problem">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christoph/ontologies/2017/11/pattern-pedia#Pattern"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/christoph/ontologies/2017/11/pattern-pedia#solution -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/christoph/ontologies/2017/11/pattern-pedia#solution">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/christoph/ontologies/2017/11/pattern-pedia#Pattern"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/christoph/ontologies/2017/11/pattern-pedia#CloudComputingPattern -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christoph/ontologies/2017/11/pattern-pedia#CloudComputingPattern">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/christoph/ontologies/2017/11/pattern-pedia#Pattern"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christoph/ontologies/2017/11/pattern-pedia#Pattern -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christoph/ontologies/2017/11/pattern-pedia#Pattern">
+        <rdfs:comment>The class of all patterns</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/christoph/ontologies/2017/11/pattern-pedia#SolutionImplementation -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/christoph/ontologies/2017/11/pattern-pedia#SolutionImplementation"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.w3.org/2002/07/owl#Thing">
+        <rdfs:comment></rdfs:comment>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+
