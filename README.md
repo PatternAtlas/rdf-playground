@@ -1,7 +1,9 @@
 # rdf-playground
 This repo holds RDF data in different representations. 
 
-Beispiel einer SPARQL-Endpoint implementation (umgesetzt mit [Apache Jena](https://jena.apache.org/)): http://83.212.107.202/sparql-ld-endpoint/
+Beispiel einer SPARQL-Endpoint implementation (umgesetzt mit [Apache Jena](https://jena.apache.org/)): http://62.217.127.118:8080/sparql-ld-endpoint/
+
+Hier ist das [Github Projekt](https://github.com/fafalios/sparql-ld) dazu. 
 
 ## Query RDFa data
 Folgende Beispiel Eingabe gibt die namen aller Techarticles in rdfa.html zurück
